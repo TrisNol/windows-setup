@@ -1,6 +1,10 @@
 # Uninstall Cortana
 Get-AppxPackage -allusers Microsoft.549981C3F5F10 | Remove-AppxPackage
 
+# Perform Windows Update
+$Updates = Start-WUScan -SearchCriteria "IsInstalled=0 AND IsHidden=0 AND IsAssigned=1"
+Install-WUUpdates -Updates $Updates
+
 # Ensure Get-ExecutionPolicy is not Restricted
 if((Get-ExecutionPolicy) -eq "Restricted"){
     write-host("ExecutionPolicy is restricted - set to AllSigned to enable following commands but with a bit of security")
