@@ -1,0 +1,11 @@
+git
+vscode
+docker-desktop
+drawio
+nodejs-lts
+python
+go
+terraform
+jre8
+vcredist140
+visualstudio2019-workload-vctools
