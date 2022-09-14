@@ -1,2 +1,5 @@
 # Snyk
 .dccache
+
+# vscode
+.vscode/

@@ -3,3 +3,4 @@ googlechrome
 putty.install
 spotify
 synologydrive
+powertoys
